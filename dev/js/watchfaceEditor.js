@@ -53,7 +53,7 @@ wfe.init = function() {
     } else if (device_list.includes(localStorage.device)) {
         app.change_device(localStorage.device, wfe);
     } else {
-        app.change_device('bip', wfe);
+        app.change_device('bips', wfe);
     }
     for (let i in device_list) {
         $('device_' + device_list[i]).addEventListener('click', () => {
